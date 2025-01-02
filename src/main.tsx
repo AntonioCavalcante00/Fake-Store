@@ -9,8 +9,8 @@ import { DefaultLayout } from "./components/layout/Main/DefaultLayout.tsx";
 import { Home } from "./pages/Home.tsx";
 
 import { client } from "./services/client.ts";
+const root = document.getElementById("root") as HTMLElement;
 
-const root = document.getElementById("root");
 ReactDOM.createRoot(root).render(
   <QueryClientProvider client={client}>
     <BrowserRouter>
