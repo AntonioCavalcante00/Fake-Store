@@ -1,0 +1,80 @@
+@keyframes fadeIn {
+  100% {
+    right: 0px;
+  }
+  0% {
+    right: -400px;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    right: 0px;
+  }
+  100% {
+    right: -400px;
+  }
+}
+
+.ExtraContent {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 390px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  z-index: 1002;
+  transition: right 0.4s ease-in-out;
+}
+
+.Open {
+  animation: fadeIn 0.4s ease-in;
+}
+
+.Lock {
+  animation: fadeOut 0.4s ease-out;
+}
+
+.ExtraContentHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.ContainerIconShoppingCar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.ContainerIconShoppingCar p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.IconShoppingCar {
+  font-size: 2.3rem;
+}
+
+.ExtraContentBody {
+  flex: 1;
+  padding: 10px;
+}
+
+.ButtonClose {
+  display: flex;
+  border: none;
+  background-color: #fff;
+  font-size: 1.8rem;
+  padding: 12px;
+  font-weight: 400;
+}
+
+.ButtonClose:hover {
+  cursor: pointer;
+}

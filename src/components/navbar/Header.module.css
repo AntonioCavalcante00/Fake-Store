@@ -1,0 +1,42 @@
+.Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1200px;
+  padding: 30px;
+  background-color: burlywood;
+}
+
+.Logo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Logo p {
+  font-size: 24px;
+}
+
+.Icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 1200px) {
+  .Container {
+    gap: 180px;
+  }
+}
+
+@media (max-width: 900px) {
+  .Container {
+    gap: 80px;
+  }
+}
+
+@media (max-width: 600px) {
+  .Container {
+    gap: 40px;
+  }
+}

@@ -1,0 +1,52 @@
+.CartItem {
+  display: flex;
+  align-items: flex-start;
+  border-radius: 1px solid #ddd;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.CartItemImage {
+  width: 70px;
+}
+
+.CartItemTitle {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: rgb(0, 0, 0, 0.5);
+  margin-bottom: 8px;
+}
+
+.CartItemPrice {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.CartItemContent {
+  padding: 0 35px 0 10px;
+}
+
+.ButtonRemoveItem {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  color: #d83232;
+  font-size: 1.8rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.CartContainer {
+  max-height: 600px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.TotalPrice {
+  position: absolute;
+  top: 47rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
