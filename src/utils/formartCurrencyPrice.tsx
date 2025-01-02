@@ -3,9 +3,9 @@ interface Props {
 }
 
 const PriceDisplay: React.FC<Props> = ({ Price }) => {
-  const priceAsNumber = typeof Price === "number" ? Price : parseFloat(Price);
+  const priceAsString = Price.toString();
+  const priceAsNumber = parseFloat(priceAsString);
 
-  // Verificar se o valor convertido é um número válido.
   if (isNaN(priceAsNumber)) {
     return <p>Preço inválido</p>;
   }
